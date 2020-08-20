@@ -1,0 +1,12 @@
+[
+  {
+    "car_name" : "Mercedes",
+    "country" : "Germany",
+    "foundation" : 1890
+  },
+  {
+    "car_name" : "Renault",
+    "country" : "France",
+    "foundation" : 1920
+  }
+]
