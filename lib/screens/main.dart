@@ -1,5 +1,6 @@
 import 'package:apikullanimi/screens/local_api.dart';
 import 'package:apikullanimi/screens/remote_api.dart';
+import 'package:apikullanimi/screens/remote_api_two.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -17,7 +18,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         "/" : (context) => Home(),
         "/localApi" : (context) => LocalApi(),
-        "/remoteApi" : (context) => RemoteApi()
+        "/remoteApi" : (context) => RemoteApi(),
+        "/remoteApi2" : (context) => RemoteApiTwo()
       },
     );
   }
@@ -44,6 +46,10 @@ class _HomeState extends State<Home> {
             RaisedButton(
               child: Text("Remote Api"),
               onPressed: () => Navigator.pushNamed(context, "/remoteApi"),
+            ),
+            RaisedButton(
+              child: Text("Remote Api 2"),
+              onPressed: () => Navigator.pushNamed(context, "/remoteApi2"),
             )
           ],
         ),
